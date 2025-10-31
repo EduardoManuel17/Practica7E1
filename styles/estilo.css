@@ -1,0 +1,134 @@
+/* Elimina márgenes y espacios por defecto, y aplica una fuente básica */
+cuerpo, div, h1, h2, h3, p {
+    margen: 0;
+    relleno: 0;
+    familia-de-fuente: Tahoma, Helvetica, sans-serif;
+}
+
+/* Hace que el ancho total incluya bordes y rellenos */
+* {
+    dimension-caja: borde-caja;
+}
+
+/* === Fondo general === */
+cuerpo {
+    color-de-fondo: #ffffff;
+}
+
+/* Ajusta tamaño, márgenes y relleno del título */
+h1 {
+    tamaño-de-fuente: 1.8em;
+    margen: 0.25em 0;
+    relleno: 0.5em 0;
+    alineación-texto: centro;
+}
+
+/* === Encabezado secundario (h2) === */
+h2 {
+    tamaño-de-fuente: 1.2em;
+    margen: 0.5em 0;
+}
+
+/* === Texto general === */
+cuerpo, p {
+    tamaño-de-fuente: 0.9em;
+}
+
+/* Espaciado inferior en párrafos */
+p {
+    margen-inferior: 1em;
+}
+
+/* === Contenedor principal del contenido === */
+artículo {
+    color-de-fondo: #f5f5f5;
+    ancho: 70%;
+    margen: 3em auto 0 auto;
+    relleno-inferior: 1em;
+}
+
+/* Limpieza de flotado dentro de los bloques */
+artículo div {
+    limpiar: derecha;
+}
+
+/* === Imágenes y figuras === */
+figura {
+    posición: relativa;
+    flotar: izquierda;
+}
+
+/* Texto debajo de las imágenes */
+pie-de-figura {
+    ancho: 143px;
+    color-de-fondo: #000000;
+    color: #ffffff;
+    altura: 20px;
+    posición: absoluta;
+    arriba: 130px;
+    izquierda: 0;
+    relleno: 0 0.5em 0 0;
+}
+
+/* Icono superpuesto en las imágenes */
+.sobreimagen {
+    posición: absoluta;
+    izquierda: 1px;
+    abajo: 3px; /* reemplaza top por bottom */
+}
+
+/* === Bloques de información === */
+.información {
+    desbordamiento: automático;
+    borde-superior: 1pt sólido #ff8800;
+}
+
+/* === Botón de enlace === */
+.boton-enlace {
+    color-de-fondo: #ff8800;
+    color: #ffffff;
+    decoración-texto: ninguna;
+    tamaño-de-fuente: 0.75em;
+    flotar: derecha;
+    relleno: 0.8em;
+    margen-derecho: 1em;
+}
+
+/* === Pie de página general === */
+pie {
+    color-de-fondo: #474747;
+    color: #cbcbcb;
+    ancho-mínimo: 100%;
+    margen-superior: 2em;
+    relleno: 1em;
+}
+
+/* Subtítulos dentro del pie */
+pie h2 {
+    color: #a4a1a1;
+}
+
+/* Sección de imágenes pequeñas */
+.pie {
+    margen: 0 1.5em;
+    flotar: izquierda;
+    borde-superior: 1pt sólido #ff8800;
+    ancho-máximo: 100%;
+}
+
+/* Miniaturas dentro del pie */
+.pie img {
+    margen: 3px;
+    ancho: 45px;
+    alto: 45px;
+    ajuste-objeto: cubrir;
+}
+
+/* Sección de “Acerca de nosotros” */
+.sección-pie {
+    margen-derecho: 1.5em;
+    relleno: 0.26em;
+    desbordamiento: oculto;
+    ancho-mínimo: 70%;
+    borde-superior: 1pt sólido #ff8800;
+}
